@@ -5,13 +5,14 @@
                 Face
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="face-link">
-                <a href="" class="dropdown-item">Cleansers</a>
-                <a href="" class="dropdown-item">Toners</a>
-                <a href="" class="dropdown-item">Exfoliants and Masks</a>
-                <a href="" class="dropdown-item">Face Treatments</a>
-                <a href="" class="dropdown-item">Moisturisers</a>
-                <a href="" class="dropdown-item">Other</a>
-                <a href="" class="dropdown-item">Skincare Sets</a>
+                <a href="{% url 'products' %}?category=cleansers" class="dropdown-item">Cleansers</a>
+                <a href="{% url 'products' %}?category=toners" class="dropdown-item">Toners</a>
+                <a href="{% url 'products' %}?category=exfoliants" class="dropdown-item">Exfoliants and Masks</a>
+                <a href="{% url 'products' %}?category=face_treatments" class="dropdown-item">Face Treatments</a>
+                <a href="{% url 'products' %}?category=moisturisers" class="dropdown-item">Moisturisers</a>
+                <a href="{% url 'products' %}?category=misc_face" class="dropdown-item">Other</a>
+                <a href="{% url 'products' %}?category=skincare_sets" class="dropdown-item">Skincare Sets</a>
+                <a href="{% url 'products' %}?category=cleansers,toners,exfoliants,face_treatments,moisturisers,misc_face,skincare_sets" class="dropdown-item">All Face Products</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -19,9 +20,10 @@
                 Body
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="body-link">
-                <a href="" class="dropdown-item">Body Wash</a>
-                <a href="" class="dropdown-item">Body Scrubs</a>
-                <a href="" class="dropdown-item">Body Lotions</a>
+                <a href="{% url 'products' %}?category=body_wash" class="dropdown-item">Body Wash</a>
+                <a href="{% url 'products' %}?category=body_scrubs" class="dropdown-item">Body Scrubs</a>
+                <a href="{% url 'products' %}?category=body_lotions" class="dropdown-item">Body Lotions</a>
+                <a href="{% url 'products' %}?category=body_wash,body_scrubs,body_lotions" class="dropdown-item">All Body Products</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -29,9 +31,10 @@
                 Hair
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="hair-link">
-                <a href="" class="dropdown-item">Shampoo</a>
-                <a href="" class="dropdown-item">Conditioner</a>
-                <a href="" class="dropdown-item">Hair Treatments</a>
+                <a href="{% url 'products' %}?category=shampoo" class="dropdown-item">Shampoo</a>
+                <a href="{% url 'products' %}?category=conditioner" class="dropdown-item">Conditioner</a>
+                <a href="{% url 'products' %}?category=hair_treatments" class="dropdown-item">Hair Treatments</a>
+                <a href="{% url 'products' %}?category=shampoo,conditioner,hair_treatments" class="dropdown-item">All Hair Products</a>
             </div>
         </li>
         <li class="nav-item dropdown">
