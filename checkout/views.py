@@ -7,13 +7,15 @@ from .forms import OrderForm
 def checkout(request):
     bag = request.session.get('bag', {})
     if not bag:
-        message.error(request, "There's nothing in your bag at the moment")
+        messages.error(request, "There's nothing in your bag at the moment")
         return redirect(reverse('products'))
     
     order_form = OrderForm()
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
+        'stripe_public_key': 'pk_test_51QHMD7DNkIE7JN202CXfzwgfPGo5DspzWYXuzJQ63kVBuhtg12xpiOvR3goWmL4TWYnZLUM1huCSUKo8jbt8hRw500ck9uR9OT',
+        'client_secret': 'test client secret',
     }
 
     return render(request, template, context)
