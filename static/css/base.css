@@ -93,3 +93,14 @@ body {
         padding-top: 164px;
     }
 }
+
+/* Add some padding to the header container when navbar is collapsed on smaller screens */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 130px;
+    }
+
+    body {
+        height: calc(100vh - 130px);
+    }
+}

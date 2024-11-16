@@ -1,6 +1,40 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="face-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Face
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="face-link">
+                <a href="" class="dropdown-item">Cleansers</a>
+                <a href="" class="dropdown-item">Toners</a>
+                <a href="" class="dropdown-item">Exfoliants and Masks</a>
+                <a href="" class="dropdown-item">Face Treatments</a>
+                <a href="" class="dropdown-item">Moisturisers</a>
+                <a href="" class="dropdown-item">Other</a>
+                <a href="" class="dropdown-item">Skincare Sets</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="body-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Body
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="body-link">
+                <a href="" class="dropdown-item">Body Wash</a>
+                <a href="" class="dropdown-item">Body Scrubs</a>
+                <a href="" class="dropdown-item">Body Lotions</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="hair-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hair
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="hair-link">
+                <a href="" class="dropdown-item">Shampoo</a>
+                <a href="" class="dropdown-item">Conditioner</a>
+                <a href="" class="dropdown-item">Hair Treatments</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
@@ -8,7 +42,7 @@
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item">By Rating</a>
                 <a href="" class="dropdown-item">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
     </ul>
