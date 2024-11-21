@@ -32,7 +32,7 @@
                                         {% if request.user.is_superuser %}
                                             <p class="my-auto">
                                                 <a class="btn btn-link" href="{% url 'edit_blog_post' post.id %}">Edit</a> 
-                                                <a class="btn btn-link text-danger" href="#">Delete</a>
+                                                <a class="btn btn-link text-danger" href="{% url 'delete_blog_post' post.id %}">Delete</a>
                                             </p>
                                         {% endif %}
                                     </div>

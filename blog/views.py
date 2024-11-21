@@ -80,3 +80,11 @@ def edit_blog_post(request, post_id):
     }
 
     return render(request, template, context)
+
+@login_required
+def delete_blog_post(request, post_id):
+    """ Delete an existing FAQ """
+    post = get_object_or_404(BlogPost, pk=post_id)
+    post.delete()
+    messages.success(request, 'Post deleted successfully.')
+    return redirect(reverse('blog')) 

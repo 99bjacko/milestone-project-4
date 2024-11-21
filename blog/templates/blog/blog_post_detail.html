@@ -21,7 +21,7 @@
                 {% if request.user.is_superuser %}
                     <p class="my-auto">
                         <a class="btn btn-link mt-5" href="{% url 'edit_blog_post' post.id %}">Edit</a> 
-                        <a class="btn btn-link text-danger mt-5" href="#">Delete</a>
+                        <a class="btn btn-link text-danger mt-5" href="{% url 'delete_blog_post' post.id %}">Delete</a>
                         <a href="{% url 'blog' %}" class="btn btn-link text-black mt-5">
                             <span>All Posts</span>
                         </a>
