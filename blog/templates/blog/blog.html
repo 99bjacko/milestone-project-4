@@ -29,6 +29,12 @@
                                         <h6 class="card-subtitle mb-2 mb-3 text-muted">{{ post.sub_title }}</h6>
                                         <h6 class="card-subtitle mb-2">Posted {{ post.date }}</h6>
                                         <a href="{% url 'blog_post_detail' post.id %}" class="card-link">View Post</a>
+                                        {% if request.user.is_superuser %}
+                                            <p class="my-auto">
+                                                <a class="btn btn-link" href="{% url 'edit_blog_post' post.id %}">Edit</a> 
+                                                <a class="btn btn-link text-danger" href="#">Delete</a>
+                                            </p>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>

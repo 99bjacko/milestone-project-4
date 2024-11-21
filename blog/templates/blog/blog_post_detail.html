@@ -18,9 +18,19 @@
                 <h2 class="text-muted mt-4">{{ post.sub_title }}</h2>
                 <h6 class="text-muted mb-5">Posted {{ post.date }}</h6>
                 <p class="text-left">{{ post.post_content }}</p>
-                <a href="{% url 'blog' %}" class="btn btn-outline-black rounded-pill mt-5">
-                    <span>all posts</span>
-                </a>
+                {% if request.user.is_superuser %}
+                    <p class="my-auto">
+                        <a class="btn btn-link mt-5" href="{% url 'edit_blog_post' post.id %}">Edit</a> 
+                        <a class="btn btn-link text-danger mt-5" href="#">Delete</a>
+                        <a href="{% url 'blog' %}" class="btn btn-link text-black mt-5">
+                            <span>All Posts</span>
+                        </a>
+                    </p>
+                {% else %}
+                    <a href="{% url 'blog' %}" class="btn btn-link border border-black rounded-pill text-black mt-5">
+                        <span>all posts</span>
+                    </a>
+                {% endif %}
             </div>
         </div>
         <div class="row">
