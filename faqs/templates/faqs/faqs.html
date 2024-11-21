@@ -15,13 +15,24 @@
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Frequently Asked Questions</h2>
-                <hr class="w-50 mb-1">
             </div>
         </div>
         <div class="row">
             <div class="faq-container col-10 offset-1">
-                <div class="row mt-1 mb-2">
-                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                <div class="accordion" id="faqAccordion">
+                    <div class="card">
+                        <div class="card-header" id="faqheading1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-black" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    <i class="fa-solid fa-caret-down"></i> Here's a Frequently Asked Question
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse1" class="collapse" aria-labelledby="faqheading1" data-parent="#faqAccordion">
+                            <div class="card-body text-black">
+                                Here is the answer to the Frequently Asked Question above!
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
