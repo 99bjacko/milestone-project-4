@@ -44,7 +44,7 @@ def add_faq(request):
 
 @login_required
 def edit_faq(request, faq_id):
-    """ Add an exisiting FAQ """
+    """ Add an existing FAQ """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store administrators can do that.')
         return redirect(reverse('home'))
