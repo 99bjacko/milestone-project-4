@@ -27,9 +27,8 @@
                                     <div class="card-body">
                                         <h4 class="card-title text-black my-3">{{ post.main_title }}</h4>
                                         <h6 class="card-subtitle mb-2 mb-3 text-muted">{{ post.sub_title }}</h6>
-                                        <h6 class="card-subtitle mb-2 text-muted">{{ post.date }}</h6>
-                                        <p class="card-text my-3">{{ post.post_content }}</p>
-                                        <a href="#" class="card-link">View Post</a>
+                                        <h6 class="card-subtitle mb-2">Posted {{ post.date }}</h6>
+                                        <a href="{% url 'blog_post_detail' post.id %}" class="card-link">View Post</a>
                                     </div>
                                 </div>
                             </div>
