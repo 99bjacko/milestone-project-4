@@ -24,11 +24,23 @@
                     {% for faq in faqs %}
                     <div class="card">
                         <div class="card-header" id="faqheading{{faq.id}}">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link text-black" data-toggle="collapse" data-target="#collapse{{faq.id}}" aria-expanded="false" aria-controls="collapse{{faq.id}}">
-                                    <i class="fa-solid fa-caret-down mr-3"></i>{{ faq.question }}
-                                </button>
-                            </h5>
+                            <div class="row">
+                                <div class="col-10">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-black" data-toggle="collapse" data-target="#collapse{{faq.id}}" aria-expanded="false" aria-controls="collapse{{faq.id}}">
+                                            <i class="fa-solid fa-caret-down mr-3"></i>{{ faq.question }}
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="col-2">
+                                    {% if request.user.is_superuser %}
+                                        <p class="ml-5 my-auto">
+                                            <a class="btn btn-link" href="{% url 'edit_faq' faq.id %}">Edit</a> 
+                                            <a class="btn btn-link text-danger" href="{% url 'delete_faq' faq.id %}">Delete</a>
+                                        </p>
+                                    {% endif %}
+                                </div>
+                            </div>
                         </div>
                         <div id="collapse{{faq.id}}" class="collapse" aria-labelledby="faqheading{{faq.id}}" data-parent="#faqAccordion">
                             <div class="card-body text-black">

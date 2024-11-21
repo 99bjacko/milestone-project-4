@@ -70,3 +70,12 @@ def edit_faq(request, faq_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_faq(request, faq_id):
+    """ Delete an existing FAQ """
+    faq = get_object_or_404(Faq, pk=faq_id)
+    faq.delete()
+    messages.success(request, 'FAQ deleted successfully.')
+    return redirect(reverse('faqs')) 
