@@ -1,51 +1,51 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="face-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Face
+            <a class="font-weight-bold nav-link text-black mr-5" href="#" id="face-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                face
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="face-link">
-                <a href="{% url 'products' %}?category=cleansers" class="dropdown-item">Cleansers</a>
-                <a href="{% url 'products' %}?category=toners" class="dropdown-item">Toners</a>
-                <a href="{% url 'products' %}?category=exfoliants" class="dropdown-item">Exfoliants and Masks</a>
-                <a href="{% url 'products' %}?category=face_treatments" class="dropdown-item">Face Treatments</a>
-                <a href="{% url 'products' %}?category=moisturisers" class="dropdown-item">Moisturisers</a>
-                <a href="{% url 'products' %}?category=misc_face" class="dropdown-item">Other</a>
-                <a href="{% url 'products' %}?category=skincare_sets" class="dropdown-item">Skincare Sets</a>
-                <a href="{% url 'products' %}?category=cleansers,toners,exfoliants,face_treatments,moisturisers,misc_face,skincare_sets" class="dropdown-item">All Face Products</a>
+                <a href="{% url 'products' %}?category=cleansers" class="dropdown-item">cleansers</a>
+                <a href="{% url 'products' %}?category=toners" class="dropdown-item">toners</a>
+                <a href="{% url 'products' %}?category=exfoliants" class="dropdown-item">exfoliants and masks</a>
+                <a href="{% url 'products' %}?category=face_treatments" class="dropdown-item">face treatments</a>
+                <a href="{% url 'products' %}?category=moisturisers" class="dropdown-item">moisturisers</a>
+                <a href="{% url 'products' %}?category=misc_face" class="dropdown-item">other</a>
+                <a href="{% url 'products' %}?category=skincare_sets" class="dropdown-item">skincare sets</a>
+                <a href="{% url 'products' %}?category=cleansers,toners,exfoliants,face_treatments,moisturisers,misc_face,skincare_sets" class="dropdown-item">all face products</a>
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="body-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Body
+            <a class="font-weight-bold nav-link text-black mr-5" href="#" id="body-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                body
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="body-link">
-                <a href="{% url 'products' %}?category=body_wash" class="dropdown-item">Body Wash</a>
-                <a href="{% url 'products' %}?category=body_scrubs" class="dropdown-item">Body Scrubs</a>
-                <a href="{% url 'products' %}?category=body_lotions" class="dropdown-item">Body Lotions</a>
-                <a href="{% url 'products' %}?category=body_wash,body_scrubs,body_lotions" class="dropdown-item">All Body Products</a>
+                <a href="{% url 'products' %}?category=body_wash" class="dropdown-item">body wash</a>
+                <a href="{% url 'products' %}?category=body_scrubs" class="dropdown-item">body scrubs</a>
+                <a href="{% url 'products' %}?category=body_lotions" class="dropdown-item">body lotions</a>
+                <a href="{% url 'products' %}?category=body_wash,body_scrubs,body_lotions" class="dropdown-item">all body products</a>
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="hair-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Hair
+            <a class="font-weight-bold nav-link text-black mr-5" href="#" id="hair-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                hair
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="hair-link">
-                <a href="{% url 'products' %}?category=shampoo" class="dropdown-item">Shampoo</a>
-                <a href="{% url 'products' %}?category=conditioner" class="dropdown-item">Conditioner</a>
-                <a href="{% url 'products' %}?category=hair_treatments" class="dropdown-item">Hair Treatments</a>
-                <a href="{% url 'products' %}?category=shampoo,conditioner,hair_treatments" class="dropdown-item">All Hair Products</a>
+                <a href="{% url 'products' %}?category=shampoo" class="dropdown-item">shampoo</a>
+                <a href="{% url 'products' %}?category=conditioner" class="dropdown-item">conditioner</a>
+                <a href="{% url 'products' %}?category=hair_treatments" class="dropdown-item">hair treatments</a>
+                <a href="{% url 'products' %}?category=shampoo,conditioner,hair_treatments" class="dropdown-item">all hair products</a>
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
+            <a class="font-weight-bold nav-link text-black mr-4" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                all products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">by price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">by rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">by category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">all products</a>
             </div>
         </li>
     </ul>
