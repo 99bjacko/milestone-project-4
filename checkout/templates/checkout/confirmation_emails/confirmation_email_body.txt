@@ -1,6 +1,6 @@
 Hi {{ order.full_name }}!
 
-This is a confirmation of your order at REVITALISE. The details can be seen below:
+This is a confirmation of your order at revitalise. The details can be seen below:
 
 Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
@@ -21,4 +21,4 @@ Thank you for your order!
 
 Sincerely,
 
-REVITALISE Customer Services Team
+revitalise team
