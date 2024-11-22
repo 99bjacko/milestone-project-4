@@ -22,10 +22,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-1-yh7b597(6dw-$3i_ds*ftqxe!fgan*ppood+b%6om%=**hzf'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-99bjacko-milestoneproje-0h7iv8oj13m.ws.codeinstitute-ide.net', 'revitalise-project-0a7838062db9.herokuapp.com']
 
@@ -124,7 +124,7 @@ WSGI_APPLICATION = 'revitalise.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        default: dj_default_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_default_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
