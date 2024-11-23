@@ -26,9 +26,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-#'DEVELOPMENT' in os.environ
+# 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-99bjacko-milestoneproje-0h7iv8oj13m.ws.codeinstitute-ide.net', 'revitalise-project-0a7838062db9.herokuapp.com']
+ALLOWED_HOSTS = [
+    '8000-99bjacko-milestoneproje-0h7iv8oj13m.ws.codeinstitute-ide.net',
+    'revitalise-project-0a7838062db9.herokuapp.com']
 
 
 # Application definition
@@ -82,7 +84,8 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -106,7 +109,7 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-SITE_ID = 2
+SITE_ID = 1
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -134,26 +137,21 @@ else:
         }
     }
 
-# DATABASES = {
-#     'default': dj_database_url.parse('postgresql://u4tpfkiftia:BzbkiJ1ZRuRH@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/bunt_bunch_match_159488')
-# }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
