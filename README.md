@@ -10,7 +10,7 @@ The live site for this project can be found at this link:
 
 The GitHub Repository for this project can be found at this link: <https://github.com/99bjacko/milestone-project-4>
 
-## Objective
+## Objective and Initial Concept
 
 In this project, I intend to create an e-commerce site selling cosmetic products, focusing on skincare. The goal of this website is to become a one-stop shop where users can learn about how to care for their skin and also buy products that are proven to keep skin healthy and protected. The main objective is to demonstrate my capabilities using HTML, CSS, JavaScript, and Python with Django along with using relational databases, Stripe payments, and Bootstrap.
 
@@ -43,10 +43,53 @@ The target audience for this website is people who are looking to get into skinc
 - As a site administrator, I would like to be able to edit existing content such as faqs and blog posts.
 - As a site administrator, I would like to be able to delete existing content such as faqs and blog posts.
 
-
-### Initial Concept
-
 #### Wireframes
+
+For initially designing the project, I utilised Balsamiq to product wireframes. This step allows for planning layouts and page structures, allowing to focus more on the website looking like the designs, instead of trying to simultaneously code and design.
+
+##### Home
+
+![Home Page Wireframe](./documentation/wireframes/home_page_wireframe.png)
+
+##### Sign In
+
+![Sign In Page Wireframe](./documentation/wireframes/sign_in_page_wireframe.png)
+
+##### Sign Out
+
+![Sign Out Page Wireframe](./documentation/wireframes/sign_up_page_wireframe.png)
+
+##### Profile
+
+![Profile Page Wireframe](./documentation/wireframes/profile_page_wireframe.png)
+
+##### Products
+
+![Products Page Wireframe](./documentation/wireframes/products_page_wireframe.png)
+
+##### Product Details
+
+![Product Details Page Wireframe](./documentation/wireframes/product_details_page_wireframe.png)
+
+##### Bag
+
+![Bag Page Wireframe](./documentation/wireframes/bag_page_wireframe.png)
+
+##### Checkout
+
+![Checkout Page Wireframe](./documentation/wireframes/checkout_page_wireframe.png)
+
+##### Order Confirmation
+
+![Order Confirmation Page Wireframe](./documentation/wireframes/order_confirmation_page_wireframe.png)
+
+##### FAQs
+
+![FAQs Page Wireframe](./documentation/wireframes/faqs_page_wireframe.png)
+
+##### Blog
+
+![Blog Page Wireframe](./documentation/wireframes/blog_page_wireframe.png)
 
 #### Colour Scheme
 
