@@ -93,7 +93,12 @@ For initially designing the project, I utilised Balsamiq to product wireframes. 
 
 #### Colour Scheme
 
+The colour scheme for this project was based around simplicity, to make the aesthetic both simple but appealing, allowing the focus to be on the products and the content, rather than the other aspects around them.
+The majority of the website is built around black or grey text on a white background, with use of greys and colours taken from Bootstrap throughout the site where appropriate.
+
 #### Typography
+
+The 'Inter' typeface was chosen for this project and was picked using Google Fonts.
 
 ## Features
 
