@@ -108,6 +108,26 @@ The 'Inter' typeface was chosen for this project and was picked using Google Fon
 
 ## Technologies Used
 
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) was used to create the website.
+- [CSS3](https://en.wikipedia.org/wiki/CSS) was used to style the website.
+- [JavaScript (including through Bootstrap)](https://en.wikipedia.org/wiki/JavaScript) was used for the functionality of the website.
+- [Python](https://www.python.org/) was used as the back-end programming language for this website.
+- [Django](https://www.djangoproject.com/) was used as the Python framework for this website.
+- [Bootstrap](https://getbootstrap.com/) was used to aid with responsive design and styling of the website.
+- [Gitpod](https://gitpod.io/): used to create the site (IDE).
+- [Google Fonts](https://fonts.google.com/): used to import the fonts used for this website into the style.css file.
+- [Google Developer Tools](https://developer.chrome.com/docs/devtools/): used for troubleshooting and testing.
+- [Git](https://git-scm.com/): used for version control by utilising the Gitpod terminal to commit to Git and push to GitHub.
+- [GitHub](https://github.com/): used to save and store the files for the project.
+- [Heroku](https://www.heroku.com/): used for hosting the deployed back-end website.
+- [Balsamiq](https://balsamiq.com/): used to create the wireframes during the design process.
+- [Am I Responsive?](https://ui.dev/amiresponsive): used to create an image depicting what the website looks like on different devices.
+- [Stripe](https://stripe.com/gb): used for secure online payments in the checkout of this website.
+- [AWS S3](https://aws.amazon.com/s3/): used to store static files.
+- [Square Image](https://squareanimage.com/): used to crop images.
+- [Image Resizer](https://imageresizer.com/): used to resize images.
+- [Favicon Generator](https://favicon.io/favicon-generator/): used for website favicon.
+
 ## Database
 
 ### Database Schema
