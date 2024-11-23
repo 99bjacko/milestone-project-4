@@ -20,7 +20,29 @@ The target audience for this website is people who are looking to get into skinc
 
 ### User Stories
 
-### Opportunities
+- As a visitor to the website, I want the navigation between pages and/or areas to be easy and intuitive, not having to rely on browser buttons.
+- As a visitor to the website, I want the website to be responsive on a number of different devices.
+- As a new visitor to the website, I would like the home page to be visually appealing.
+- As a new visitor to the website, I want to be able to see a wide range of products.
+- As a new visitor to the website, I want to be able to register for an account easily.
+- As a new visitor to the website, I would like to make purchases without having to register an account.
+- As a visitor to the website, I want there to be an appropriate amount of information about each product.
+- As a visitor to the website, I want the checkout process to be smooth and straightforward.
+- As a visitor to the website, I want to be able to see exactly what I'm purchasing before completing the checkout process.
+- As a visitor to the website, I want to be able to search for specific products and find them easily.
+- As a visitor to the website, I want to be able to sort products via price or other parameters.
+- As a visitor to the website, I want to be able to view specific product categories and the products that fall under those categories.
+- As a returning visitor to the website, I want to be able to log in easily.
+- As a returning visitor to the website, I want to be able to log out easily.
+- As a returning visitor to the website, I would like to edit the information stored on my profile easily.
+- As a returning visitor to the website, I would like to see my previous orders.
+- As a site administrator, I would like to be able to add new products.
+- As a site administrator, I would like to be able to edit existing products.
+- As a site administrator, I would like to be able to delete existing products.
+- As a site administrator, I would like to be able to add content such as faqs and blog posts.
+- As a site administrator, I would like to be able to edit existing content such as faqs and blog posts.
+- As a site administrator, I would like to be able to delete existing content such as faqs and blog posts.
+
 
 ### Initial Concept
 
