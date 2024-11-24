@@ -372,6 +372,22 @@ A number of models were created for this website. Below is an Entity Relationshi
 
 ### Validation
 
+#### HTML Validation using the [W3C Nu HTML Checker](https://validator.w3.org/nu/) (previously W3C Markup Validation Service).
+
+Several pages had minor erros highlighted when using the checker, which were resolved through code refactoring.
+
+#### CSS Validation using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+No errors found.
+
+#### JS Validation using [JSHint](https://jshint.com/)
+
+Missing or unnecessary semicolons highlighted, resolved through code refactoring.
+
+#### Python Validation using [CI Python Linter](https://pep8ci.herokuapp.com/) and [Flake8](https://flake8.pycqa.org/en/latest/)
+
+Errors including unnecessary whitespace, lines too long, and indentation errors, all resolved through code refactoring.
+
 ### Lighthouse Testing
 
 ## Bugs
