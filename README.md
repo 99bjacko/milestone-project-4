@@ -104,7 +104,233 @@ The 'Inter' typeface was chosen for this project and was picked using Google Fon
 
 ### Current Features
 
+#### Navigation bar
+
+- The design of the navigation bar is kept consistent across all pages of the website, with the logo on the left hand side, main navigation links and search in the center and profile and bag links on the right.
+- On mobile, the main navigation links are contained in a collapsed menu with a navigation toggler, with an additional home link as the logo is hidden.
+- There is a delivery banner at the top of the screen promoting free delivery if a customer spends over £50.
+- The navigation bar is the main method for navigation around the different pages of the website.
+- The main navigation links do not changed whether a user is logged in or not, or if the user is a superuser.
+- There are additional links shown to superusers under the profile links to add products, faq posts, and blog posts.
+
+##### Navigation Desktop
+
+![Navigation](./documentation/features/navigation_screenshot.png)
+![Navigation Main Link Toggled](./documentation/features/navigation_main_link_toggled_screenshot.png)
+![Navigation Profile Link Toggled](./documentation/features/navigation_profile_link_toggle_screenshot.png)
+![Navigation Admin Profile Link Toggled](./documentation/features/navigation_admin_profile_link_toggle_screenshot.png)
+
+##### Navigation Mobile
+
+![Navigation Mobile](./documentation/features/navigation_mobile_screenshot.png)
+![Navigation Mobile Toggled](./documentation/features/navigation_mobile_toggled_screenshot.png)
+![Navigation Mobile Main Link Toggled](./documentation/features/navigation_main_link_toggled_mobile_screenshot.png)
+![Navigation Mobile Search Toggled](./documentation/features/navigation_mobile_search_toggled_screenshot.png)
+
+#### Home Page
+
+- The home page contains a hero image and a call to action button linked to the all products page, encouraging users to shop now.
+- The hero image and associated text is fully responsive.
+
+![Home Page](./documentation/features/home_page_screenshot.png)
+![Home Page Mobile](./documentation/features/home_page_mobile_screenshot.png)
+
+#### Sign In Page
+
+- The sign in page contains a form with a username or email field and a password field.
+- Above the form is a paragraph, linking users to sign up if they have not yet created an account.
+- There are two buttons, one to take the user back to the home page, and one to sign the user in.
+- If the username and password combination cannot be found in the database, a message displays informing the user.
+- The form contains basic validation.
+
+![Sign In Page](./documentation/features/sign_in_page_screenshot.png)
+
+#### Sign Up Page
+
+- The sign up page contains a form with email, email confirmation, username, password, and password confirmation fields.
+- Above the form is a paragraph, linking users to sign in if they already have an account.
+- There are two buttons, one to take the user to the sign in page, and one to sign the user up.
+- The form contains basic validation.
+
+![Sign Up Page](./documentation/features/register_page_screenshot.png)
+
+#### Profile Page
+
+- The profile page contains two main areas - the default delivery information and the order history.
+- The default delivery information can be updated via the profile or when checking out.
+- The order history contains past orders, with a link to the order confirmation page.
+
+![Profile Page](./documentation/features/profile_page_screenshot.png)
+
+#### Products Page
+
+- The all products page displays all of the products on the website.
+- The main nav links link to products in certain categories.
+- The categories selected will appear above the products container.
+- Products can be sorted by price, rating, name, and category name.
+- Each product has its own card with an image, product name, price, category, and rating.
+- The product name and image are links to the product details page of that specific product.
+- If a superuser is logged in, each product will have edit and delete buttons on the card.
+- Products are stacked on top of each other on mobile, in rows of 2 on tablets, and rows of 4 on desktop.
+- There is a back to the top button in the bottom right of the page.
+
+![Products Page](./documentation/features/products_page_screenshot.png)
+![Products Page Admin](./documentation/features/products_page_admin_screenshot.png)
+![Products Page Mobile](./documentation/features/products_page_mobile_screenshot.png)
+
+#### Product Details Page
+
+- The product details page displays information on a specific product.
+- The product details page for a product is accessed through clicking on the name or image of a product on the products page.
+- Each product has an image, product name, price, category, rating, and description.
+- The image is shown on the left, with the rest of the content on the right.
+- On mobile, the image is shown stacked above the rest of the content.
+- There is a quantity selector and a button to add the product to the bag.
+- There is also a button to go back to the all products page.
+- If a superuser is logged in, each product will have edit and delete buttons, like on the products page.
+- Products can be added by admins using the Add Product page.
+- Products can be edited by admins using the Edit Product page.
+
+![Product Details Page](./documentation/features/product_details_page_screenshot.png)
+![Product Details Page Mobile](./documentation/features/product_details_page_mobile_screenshot.png)
+
+#### Add Product Page
+
+- The add product page can only be accessed by superusers.
+- The page contains a form with basic validation.
+
+![Add Product Page](./documentation/features/add_product_page_screenshot.png)
+
+#### Edit Product Page
+
+- The edit product page can only be accessed by superusers.
+- The page contains a prefilled form with basic validation.
+
+![Edit Product Page](./documentation/features/edit_product_page_screenshot.png)
+
+#### Shopping Bag Page
+
+- The shopping bag page displays a message if empty and a button to go back to the all products page.
+- If there is an item in the bag, its image, name, sku, price, quantity, and subtotal are displayed.
+- Beneath the displayed items on desktop, a bag total, delivery cost, and grand total is displayed.
+- If the bag total is less than £50, a message is displayed encouraging the customer to spend more to get free delivery.
+- There are two buttons displayed, one to go back to the all products page, the other to proceed to the checkout page.
+- On mobile, the bag total, delivery cost, grand total, and buttons are displayed above the items in the bag.
+
+![Empty Shopping Bag Page](./documentation/features/shopping_bag_page_empty_screenshot.png)
+![Shopping Bag Page](./documentation/features/shopping_bag_page_screenshot.png)
+![Shopping Bag Page Mobile](./documentation/features/shopping_bag_page_mobile_screenshot.png)
+
+#### Checkout Page
+
+- The checkout page is accessed through a button on the shopping bag page.
+- The checkout page contains two sections, an order form and an order summary.
+- The order form contains fields for name, email address, phone number, address, and a stripe card number field.
+- There are two buttons, one to go back to the shopping bag page and one to complete and submit the order.
+- If a user is not logged in, above the card field there are links to create an account or login to save the delivery details.
+- If a user is logged in, a checkbox is displayed above the card field to save the delivery details.
+- The order summary displays the items in the bag with their image, name, quantity, and subtotal.
+- Beneath the items, the order total, delivery cost, and grand total are displayed.
+- On mobile the order summary is displayed before the order form.
+- After successfully placing an order, the user is redirected to an order confirmation page.
+
+![Checkout Page](./documentation/features/checkout_page_screenshot.png)
+![Checkout Page Mobile](./documentation/features/checkout_page_mobile_screenshot.png)
+
+#### Order Confirmation Page
+
+- The order confirmation page is accessed after successfully placing an order or viewing a past order through the profile page.
+- The order info is displayed, containing a unique order number, and the date and time the order was placed.
+- The order details is displayed, showing product names, quantities, and their individual price.
+- The delivery details are displayed, showing the information provided in the form.
+- The billing info is displayed, containing the order total, delivery cost, and grand total.
+- If it is accessed after successfully placing an order, a button is displayed linking to all face products.
+- If it is accessed through the profile, a button is displayed linking back to the profile page.
+
+![Order Confirmation Page](./documentation/features/order_confirmation_page_screenshot.png)
+
+#### FAQs Page
+
+- The FAQs page contains an accordion containing frequently asked questions and relevant answers.
+- FAQs can be added by admins using the Add FAQ page.
+- FAQs can be edited by admins using the Edit FAQ page.
+- If a superuser is logged in, edit and delete buttons are displayed for each FAQ.
+
+![FAQs Page](./documentation/features/faqs_page_screenshot.png)
+![FAQs Page Admin](./documentation/features/faqs_page_admin_screenshot.png)
+
+#### Add FAQ page
+
+- The add faq page can only be accessed by superusers.
+- The page contains a form with basic validation.
+
+![Add FAQ Page](./documentation/features/add_faq_page_screenshot.png)
+
+#### Edit FAQ page
+
+- The edit faq page can only be accessed by superusers.
+- The page contains a prefilled form with basic validation.
+
+![Edit FAQ Page](./documentation/features/edit_faq_page_screenshot.png)
+
+#### Blog Page
+
+- The Blog page contains a main heading and cards for each post.
+- Each card contains a title, subtitle, date the post was created, and a button linking to the blog post detail page for that specific post.
+- Posts can be added by admins using the Add Blog Post page.
+- Posts can be edited by admins using the Edit Blog Post page.
+- If a superuser is logged in, edit and delete buttons are displayed for each post.
+
+![Blog Page](./documentation/features/blog_page_screenshot.png)
+![Blog Page Admin](./documentation/features/blog_page_admin_screenshot.png)
+
+#### Blog Post Details Page
+
+- The blog post details page displays information on a specific post.
+- The blog post details page for a post is accessed through clicking on the view post button on the blog page.
+- The page displays the post title, subtitle, date it was posted, and content.
+- An all posts button linking back to the blog page is displayed beneath the post.
+- If a superuser is logged in, edit and delete buttons are displayed for each post.
+
+![Blog Post Details Page](./documentation/features/blog_page_details_screenshot.png)
+![Blog Post Details Page Admin](./documentation/features/blog_post_details_admin_screenshot.png)
+
+#### Add Blog Post Page
+
+- The add blog post page can only be accessed by superusers.
+- The page contains a form with basic validation.
+
+![Add Blog Post Page](./documentation/features/add_blog_post_screenshot.png)
+
+#### Edit Blog Post page
+
+- The edit blog post page can only be accessed by superusers.
+- The page contains a prefilled form with basic validation.
+
+![Edit FAQ Page](./documentation/features/edit_faq_page_screenshot.png)
+
+#### Toasts
+
+- Toasts are used throughout the website for actions such as adding an item to the bag, successfully placing an order, editing or deleting a product, and more.
+
+![Success Toast](./documentation/features/success_toast_screenshot.png)
+![Alert Toast](./documentation/features/alert_toast_screenshot.png)
+![Error Toast](./documentation/features/error_toast_screenshot.png)
+
+#### Custom Error Pages
+
+- There are custom error pages for 403, 404, and 500 errors.
+
 ### Future Features
+
+If I had more time to work on this project, some features I would like to look at are:
+
+- Changing the formats of the dates shown for order confirmations and blog posts.
+- Customer reviews and ratings.
+- Comments on blog posts.
+- Contact form.
+- Product page split up into multiple pages.
+- More content - the concept of this website is based around lots of good content.
 
 ## Technologies Used
 
