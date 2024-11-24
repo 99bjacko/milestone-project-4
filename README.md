@@ -130,7 +130,13 @@ The 'Inter' typeface was chosen for this project and was picked using Google Fon
 
 ## Database
 
+The backend application connects to a Postgres database hosted on [Amazon Web Services](https://aws.amazon.com/free/database/).
+
 ### Database Schema
+
+A number of models were created for this website. Below is an Entity Relationship Diagram to visualise the models and the relationships between them.
+
+![Database Schema ERD](./documentation/db_schema_erd.png)
 
 ## Testing
 
