@@ -390,6 +390,30 @@ Errors including unnecessary whitespace, lines too long, and indentation errors,
 
 ### Lighthouse Testing
 
+For this project, I tested the performance, accessibility, best practices and SEO of the website using Lighthouse, one of the Chrome Developer Tools.
+
+| Page | Desktop | Mobile | Notes |
+| ---- | ------- | ------ | ----- |
+| Home | ![Home Page Lighthouse Desktop](./documentation/lighthouse/home_page_desktop_lighthouse.png) | ![Home Page Lighthouse Mobile](./documentation/lighthouse/home_page_mobile_lighthouse.png) | Slight performance improvement desired on mobile. |
+| Sign In | ![Sign In Page Lighthouse Desktop](./documentation/lighthouse/sign_in_page_desktop_lighthouse.png) | ![Sign In Page Lighthouse Mobile](./documentation/lighthouse/sign_in_page_mobile_lighthouse.png) | Slight accessibility improvement desired on desktop and mobile. Slight performance improvement desired on mobile. |
+| Sign Up | ![Sign Up Page Lighthouse Desktop](./documentation/lighthouse/sign_up_page_desktop_lighthouse.png) | ![Sign Up Page Lighthouse Mobile](./documentation/lighthouse/sign_up_page_mobile_lighthouse.png) | Slight accessibility improvement desired on desktop and mobile. Slight performance improvement desired on mobile. |
+| Profile | ![Profile Page Lighthouse Desktop](./documentation/lighthouse/profile_page_desktop_lighthouse.png) | ![Profile Page Lighthouse Mobile](./documentation/lighthouse/profile_page_mobile_lighthouse.png) | Slight accessibility improvement desired on desktop and mobile. Slight performance improvement desired on mobile. |
+| Products | ![Products Page Lighthouse Desktop](./documentation/lighthouse/products_page_desktop_lighthouse.png) | ![Products Page Lighthouse Mobile](./documentation/lighthouse/profile_page_mobile_lighthouse.png) | Slight accessibility improvement and performance improvement desired on desktop and mobile. |
+| Product Details | ![Product Details Page Lighthouse Desktop](./documentation/lighthouse/product_details_page_desktop_lighthouse.png) | ![Product Details Page Lighthouse Mobile](./documentation/lighthouse/product_details_page_mobile_lighthouse.png) | Slight accessibility improvement and performance improvement desired on desktop and mobile. |
+| Add Product | ![Add Product Page Lighthouse Desktop](./documentation/lighthouse/add_product_page_desktop_lighthouse.png) | ![Add Product Page Lighthouse Mobile](./documentation/lighthouse/add_product_page_mobile_lighthouse.png) | Slight accessibility improvement desired on desktop and mobile. Slight performance improvement desired on mobile. |
+| Edit Product | ![Edit Product Page Lighthouse Desktop](./documentation/lighthouse/edit_product_page_desktop_lighthouse.png) | ![Edit Product Page Lighthouse Mobile](./documentation/lighthouse/edit_product_page_mobile_lighthouse.png) | Slight accessibility improvement desired on desktop and mobile. Performance improvement desired on mobile. |
+| Shopping Bag | ![Shopping Bag Page Lighthouse Desktop](./documentation/lighthouse/shopping_bag_page_desktop_lighthouse.png) | ![Shopping Bag Page Lighthouse Mobile](./documentation/lighthouse/shopping_bag_page_mobile_lighthouse.png) | Slight performance improvement desired on mobile. |
+| Checkout | ![Checkout Page Lighthouse Desktop](./documentation/lighthouse/checkout_page_desktop_lighthouse.png) | ![Checkout Page Lighthouse Mobile](./documentation/lighthouse/checkout_page_mobile_lighthouse.png) | Slight accessibility improvement desired on desktop. Performance improvement desired on desktop and mobile. |
+| Order Confirmation | ![Order Confirmation Page Lighthouse Desktop](./documentation/lighthouse/order_confirmation_page_desktop_lighthouse.png) | ![Order Confirmation Page Lighthouse Mobile](./documentation/lighthouse/order_confirmation_page_mobile_lighthouse.png) | Performance improvement desired on mobile. |
+| FAQs | ![FAQs Page Lighthouse Desktop](./documentation/lighthouse/faqs_page_desktop_lighthouse.png) | ![FAQs Page Lighthouse Mobile](./documentation/lighthouse/faqs_page_mobile_lighthouse.png) | Slight accessibility improvement desired on desktop and mobile. Performance improvement desired on mobile. |
+| Add FAQ | ![Add FAQ Page Lighthouse Desktop](./documentation/lighthouse/add_faq_page_desktop_lighthouse.png) | ![Add FAQ Page Lighthouse Mobile](./documentation/lighthouse/add_faq_page_mobile_lighthouse.png) |
+Slight performance improvement desired on mobile. |
+| Edit FAQ | ![Edit FAQ Page Lighthouse Desktop](./documentation/lighthouse/edit_faq_page_desktop_lighthouse.png) | ![Edit FAQ Page Lighthouse Mobile](./documentation/lighthouse/edit_faq_page_mobile_lighthouse.png) | Slight performance improvement desired on mobile. |
+| Blog | ![Blog Page Lighthouse Desktop](./documentation/lighthouse/blog_page_desktop_lighthouse.png) | ![Blog Page Lighthouse Mobile](./documentation/lighthouse/blog_page_mobile_lighthouse.png) | Slight accessibility improvement desired on desktop and mobile. Performance improvement desired on mobile. |
+| Blog Post Details | ![Blog Post Details Page Lighthouse Desktop](./documentation/lighthouse/blog_post_details_page_desktop_lighthouse.png) | ![Blog Post Details Page Lighthouse Mobile](./documentation/lighthouse/blog_post_details_page_mobile_lighthouse.png) | Slight accessibility improvement desired on desktop and mobile. Performance improvement desired on mobile. |
+| Add Blog Post | ![Add Blog Post Page Lighthouse Desktop](./documentation/lighthouse/add_blog_post_page_desktop_lighthouse.png) | ![Add Blog Post Page Lighthouse Mobile](./documentation/lighthouse/add_blog_post_page_mobile_lighthouse.png) | Slight performance improvement desired on mobile.
+| Edit Blog Post | ![Edit Blog Post Page Lighthouse Desktop](./documentation/lighthouse/edit_blog_post_page_desktop_lighthouse.png) | ![Edit Blog Post Page Lighthouse Mobile](./documentation/lighthouse/edit_blog_post_page_mobile_lighthouse.png) | Slight performance improvement desired on mobile.
+
 ## Bugs
 
 ## Deployment
